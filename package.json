@@ -31,7 +31,7 @@
     "prestart": "npm run build",
     "start": "node -r source-map-support/register .",
     "prepublishOnly": "npm run test",
-    "heroku-prebuild": "npm i -g npm i @loopback/cli"
+    "heroku-postbuild": "npm install"
   },
   "repository": {
     "type": "git"
@@ -55,10 +55,10 @@
     "@loopback/repository": "^1.14.0",
     "@loopback/rest": "^1.19.0",
     "@loopback/rest-explorer": "^1.3.7",
-    "@loopback/service-proxy": "^1.3.6",
-    "@loopback/build": "^2.0.11"
+    "@loopback/service-proxy": "^1.3.6"
   },
   "devDependencies": {
+    "@loopback/build": "^2.0.11",
     "source-map-support": "^0.5.13",
     "@loopback/testlab": "^1.8.1",
     "@types/node": "^10.14.18",
